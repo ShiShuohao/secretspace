@@ -4,7 +4,7 @@
 个人博客项目，更新中
 
 #### 软件架构
-HTML、CSS、JavaScript、servlet
+HTML、CSS、JavaScript、servlet、jsp、jquery、Tomcat、MySQL
 
 
 #### 安装教程
@@ -15,7 +15,7 @@ HTML、CSS、JavaScript、servlet
 
 使用idea maven项目
 
-#### 参与贡献
+#### 域名（有时无法访问，最近服务器正在部署其他项目）
 
 ©secretspace.cn
 
