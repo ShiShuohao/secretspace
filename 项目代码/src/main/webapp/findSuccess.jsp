@@ -1,0 +1,54 @@
+<%--找回密码成功，展示用户密码，返回登录界面--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="resources/image/icon/favicon.ico">
+    <title>success</title>
+    <style>
+        @font-face {
+            font-family: "PingFang";
+            src: url(resources/font/PingFang.ttf);
+        }
+        body,input{
+            font-family: PingFang;
+        }
+    </style>
+    <style>
+        a{
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            box-shadow: 0 1px 0 0 #f0f7fa;
+            background: #33bdef linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+            border-radius:6px;
+            border:1px solid #057fd0;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family: Arial, serif;
+            font-size:15px;
+            font-weight:bold;
+            padding:6px 24px;
+            text-decoration:none;
+            text-shadow:0 -1px 0 #5b6178;
+        }
+        a:hover{
+            background: #019ad2 linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+        }
+    </style>
+</head>
+<body>
+<div style="height: 200px;width: 300px;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);border: 3px solid cornflowerblue;border-radius: 30px;text-align: center;">
+    <%
+        String password = (String) session.getAttribute("password");
+    %>
+    <div style="position: relative;top: 25px;">
+        <img src="resources/image/icon/error.png" alt="" style="height: 30px;width: 30px;position: relative;top: 9px;">
+        <span style="font-size: 13px;">找回成功，您的密码是：</span>
+    </div>
+    <span style="position: absolute;transform: translate(-50%,-50%);top: 49%;font-size: 16px;color: red;"><%=password%></span>
+    <a href="login.jsp">点击返回</a>
+</div>
+</body>
+</html>
