@@ -1,7 +1,7 @@
 # secretspace
 
 #### 介绍
-个人博客项目，更新中
+博客发布与管理系统
 
 #### 软件架构
 HTML、CSS、JavaScript、servlet、jsp、jquery、Tomcat、MySQL
